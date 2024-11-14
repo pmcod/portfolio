@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">Peter Aina</div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="link-group" id="navbarLinks">
+            <li class="link active"><a href="#header">home</a></li>
+            <li class="link"><a href="#portfolio">projects</a></li>
+            <li class="link"><a href="#about">about</a></li>
+            <li class="link"><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+<!-- home section -->
+<header id="header">
+    <div class="container">
+      <h1>Hi, I'm Peter Aina</h1>
+      <p>A passionate <span id="role">Web Developer</span></p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm a web developer with a passion for building clean and user-friendly web applications. I enjoy the challenge of solving complex problems and continuously improving my skills.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="project-1.png" alt="Project 1">
+          <h3>Project Title 1</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="project-2.png" alt="Project 2">
+          <h3>Project Title 2</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="project-3.png" alt="Project 3">
+          <h3>Project Title 3</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me through any of the following methods.</p>
+      <div class="contact-info">
+        <!-- Contact Form -->
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Alternate Contact Information -->
+      <p>Or contact me on my email: <a href="mailto:your.email@example.com">peteraina@gmail.com</a></p>
+      
+    </div>
+  </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #191919;
+    color: #fff;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #1a1a1a;
+    display: flex;
+    padding: 10px 20px;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+}
+.navbar-brand {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.link-group {
+    display: flex;
+    gap: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    opacity: 0.8;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.link {
+    list-style-type: none;
+}
+
+.link a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.link a:hover {
+    opacity: 1;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+#about, #contact {
+    background: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Portfolio */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    .portfolio-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .link-group {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .link-group {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #1a1a1a;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+
+    .link-group.show {
+        display: flex;
+    }
+
+    .link a {
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+    .portfolio-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio-item {
+        flex: 1 1 100%;
+    }
+
+    .link-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.85rem;
+    }
+
+    form button {
+        font-size: 0.85rem;
+    }
+
+    .link a {
+        font-size: 18px;
+    }
+}
